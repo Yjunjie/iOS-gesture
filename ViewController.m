@@ -138,7 +138,7 @@
         labb.transform = CGAffineTransformScale(labb.transform,
                                                 1/recognizer.scale,1/recognizer.scale);
     }
-    [self recognizerUPdate:recognizer andType:1];
+    [self recognizerUPdate:recognizer andType:1];//实时跟新地图手势中心点
     recognizer.scale = 1;
 }
 
@@ -151,7 +151,7 @@
                 labb.transform = CGAffineTransformRotate(labb.transform, -recognizer.rotation);
             }
         }
-    [self recognizerUPdate:recognizer andType:2];
+    [self recognizerUPdate:recognizer andType:2];//实时跟新地图手势中心点
     recognizer.rotation = 0;
 }
 
